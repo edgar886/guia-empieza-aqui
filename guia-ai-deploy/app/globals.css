@@ -26,6 +26,13 @@ body {
 
 .wrap { max-width: 720px; margin: 0 auto; padding: 48px 24px 72px; }
 
+/* Modo embed: la guia va dentro de un iframe en /empieza-aqui.
+   La pagina del sitio ya pone el marco y el titulo, aqui solo va la conversacion. */
+html.embed body { background: transparent; }
+html.embed .wrap { max-width: 640px; padding: 6px 10px 12px; }
+html.embed .guia .head { display: none; }
+html.embed .guia .foot { display: none; }
+
 .guia .eyebrow {
   font-family: var(--sans);
   font-size: 11px;
