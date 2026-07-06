@@ -2,10 +2,11 @@
 // El guia usa esto para recomendar UN libro-umbral segun donde este la persona.
 // Los enlaces son a las paginas internas de venta en edgarboone.com.
 // Fichas destiladas de los media kits oficiales de cada libro.
+// Cuatro puertas siguen la metafora del piloto: despierta, domina el instrumento, crea en el mundo, trasciende.
 
 export const SITE = "https://edgarboone.com";
 
-export type Puerta = "Despertar" | "Construir" | "Trascender";
+export type Puerta = "Despierta" | "Dominio" | "Crea" | "Trasciende";
 
 export interface Book {
   title: string;
@@ -19,10 +20,10 @@ export interface Book {
 }
 
 export const BOOKS: Book[] = [
-  // ---- DESPERTAR ----
+  // ---- I. DESPIERTA (empezar a verte con claridad) ----
   {
     title: "DESPIERTA",
-    puerta: "Despertar",
+    puerta: "Despierta",
     umbral: true,
     linea: "El primer paso: descubrir quien ha estado manejando tu vida mientras dormias.",
     para: "Para quien vive en piloto automatico y empieza a sospechar que la vida que carga no es del todo suya. El punto de entrada al camino interior. Recorre tres etapas: el despertar, el dominio y la trascendencia.",
@@ -31,9 +32,21 @@ export const BOOKS: Book[] = [
     href: "/libro-despierta",
   },
   {
-    title: "SELF MASTERY",
-    puerta: "Despertar",
+    title: "THE WAY",
+    puerta: "Despierta",
     umbral: false,
+    linea: "La gracia de vivir. Libro puerta de la serie The Way.",
+    para: "Para quien vive apurado aunque no haya prisa y recuerda, en el fondo, otra manera de andar. Describe la segunda manera de vivir: presente donde la vida ocurre, la mente quieta mientras trabajas, el corazon en paz mientras amas.",
+    senales: "vivo corriendo todo el dia, apurado sin razon, quiero estar presente, llego a la noche vaciado, se me olvido como vivir ligero",
+    frase: "Hay dos maneras de vivir. Una la conoces bien. La otra se te olvido. No es un destino, esta disponible hoy, en el siguiente respiro.",
+    href: "/libros/the-way",
+  },
+
+  // ---- II. DOMINIO (gobernar tu instrumento) ----
+  {
+    title: "SELF MASTERY",
+    puerta: "Dominio",
+    umbral: true,
     linea: "Despertaste. Y ahora que. La escuela de manejo del piloto.",
     para: "Para quien ya desperto y descubrio que tiene las manos en el volante sin saber girar. Ensena a dominar las tres dimensiones del instrumento humano: la mente, las emociones y el ego. No con afirmaciones, con practica.",
     senales: "reacciono antes de pensar, mis emociones me gobiernan, mi mente no para, quiero disciplina interior, se lo que tengo que hacer pero no me domino",
@@ -41,18 +54,8 @@ export const BOOKS: Book[] = [
     href: "/libro-self-mastery",
   },
   {
-    title: "CABAN",
-    puerta: "Despertar",
-    umbral: false,
-    linea: "Lo que viene cuando la voluntad deja de funcionar.",
-    para: "Para quien ya trabajo, ya se esforzo, ya hizo todo lo que sabia, y llego a un punto donde empujar mas fuerte no lo lleva mas lejos. Ensena a poner intencion desde el alma, leer las senales de la vida y soltar el control del como.",
-    senales: "empujar mas fuerte ya no funciona, el control me esta estancando, quiero fluir sin rendirme, siento que forzo todo, busco un centro sereno",
-    frase: "Donde el control que te trajo hasta aqui se convierte en el obstaculo que te detiene. No te ensena a controlar tu vida, te ensena a navegarla.",
-    href: "/libro-caban",
-  },
-  {
     title: "NADA Y TODO",
-    puerta: "Despertar",
+    puerta: "Dominio",
     umbral: false,
     linea: "El descenso a la raiz del miedo, y lo que aparece cuando esa raiz se disuelve.",
     para: "Para quien carga miedo, estres y ansiedad y los ha explicado de mil maneras: el trabajo, el dinero, una relacion. Va por debajo de todas esas explicaciones, hasta la creencia que vive bajo todos los miedos: puedo desaparecer.",
@@ -60,21 +63,31 @@ export const BOOKS: Book[] = [
     frase: "El miedo no responde a un peligro real. Lo inventa. Sigue cualquier miedo hasta el fondo y no hallas un monstruo. Hallas nada. El Coco no existe. Tu, si.",
     href: "/libro-nada-y-todo",
   },
+  {
+    title: "CABAN",
+    puerta: "Dominio",
+    umbral: false,
+    linea: "Lo que viene cuando la voluntad deja de funcionar.",
+    para: "Para quien ya trabajo, ya se esforzo, ya hizo todo lo que sabia, y llego a un punto donde empujar mas fuerte no lo lleva mas lejos. Ensena a poner intencion desde el alma, leer las senales de la vida y soltar el control del como.",
+    senales: "empujar mas fuerte ya no funciona, el control me esta estancando, quiero fluir sin rendirme, siento que forzo todo, busco un centro sereno",
+    frase: "Donde el control que te trajo hasta aqui se convierte en el obstaculo que te detiene. No te ensena a controlar tu vida, te ensena a navegarla.",
+    href: "/libro-caban",
+  },
 
-  // ---- CONSTRUIR ----
+  // ---- III. CREA (construir en el mundo) ----
   {
     title: "EN LA ARENA",
-    puerta: "Construir",
+    puerta: "Crea",
     umbral: true,
     linea: "La dignidad de los que construyen.",
-    para: "Para el que crea empresas, lidera familias o levanta visiones desde la nada, y descubrio que construir es un acto solitario. La entrada al terreno de construir. Habla de los criticos, el miedo que paraliza y el ego del constructor.",
+    para: "Para el que crea empresas, lidera familias o levanta visiones desde la nada, y descubrio que construir es un acto solitario. La entrada al terreno de crear. Habla de los criticos, el miedo que paraliza y el ego del constructor.",
     senales: "construyo solo, me critican desde afuera, cargo el peso de sacar algo adelante, nadie ve lo que cuesta, estoy en el polvo sudando",
     frase: "Es lo que alguien debio decirte hace anos. Lo que se forja en la arena, nadie te lo puede quitar.",
     href: "/libro-en-la-arena",
   },
   {
     title: "LIDERA",
-    puerta: "Construir",
+    puerta: "Crea",
     umbral: false,
     linea: "Dirigir desde la consciencia, no desde el miedo.",
     para: "Para quien tiene gente a su cargo y sospecha que la dirige desde el control o el cansancio. Nombra la soledad de quien lidera y ofrece los cinco pilares: consciencia, integridad, confianza, amor y armonia fluida.",
@@ -83,18 +96,8 @@ export const BOOKS: Book[] = [
     href: "/libro-lidera",
   },
   {
-    title: "THE WAY",
-    puerta: "Construir",
-    umbral: false,
-    linea: "La gracia de vivir. Libro puerta de la serie The Way.",
-    para: "Para quien vive apurado aunque no haya prisa y recuerda, en el fondo, otra manera de andar. Describe la segunda manera de vivir: presente donde la vida ocurre, la mente quieta mientras trabajas, el corazon en paz mientras amas.",
-    senales: "vivo corriendo todo el dia, apurado sin razon, quiero estar presente, llego a la noche vaciado, se me olvido como vivir ligero",
-    frase: "Hay dos maneras de vivir. Una la conoces bien. La otra se te olvido. No es un destino, esta disponible hoy, en el siguiente respiro.",
-    href: "/libros/the-way",
-  },
-  {
     title: "THE WAY: PAREJAS",
-    puerta: "Construir",
+    puerta: "Crea",
     umbral: false,
     linea: "El amor que se construye.",
     para: "Para quien ya ama a alguien y quiere dejar de defenderse del amor para empezar a construirlo. Ensena a ver a la pareja como es y no como reflejo, a pedir sin castigar, a soltar el control disfrazado de amor.",
@@ -104,7 +107,7 @@ export const BOOKS: Book[] = [
   },
   {
     title: "THE WAY: HIJOS",
-    puerta: "Construir",
+    puerta: "Crea",
     umbral: false,
     linea: "No te falta metodo. Te sobra miedo.",
     para: "Para el padre o la madre que hizo todo lo que se supone y aun asi la casa se siente tensa. No es un manual de crianza: trabaja el estado desde el que crias, porque un hijo no recibe tus palabras, recibe el estado desde el cual se las dijiste.",
@@ -114,7 +117,7 @@ export const BOOKS: Book[] = [
   },
   {
     title: "THE WAY: EMPRENDER",
-    puerta: "Construir",
+    puerta: "Crea",
     umbral: false,
     linea: "La gracia de crear.",
     para: "Para el que carga algo que quiere crear y no salta, o ya construyo y no puede celebrar. Ensena a reconocer la voz del miedo disfrazada de sensatez, a separarse de la creacion sin dejar de amarla, y a crear desde lo lleno.",
@@ -122,21 +125,11 @@ export const BOOKS: Book[] = [
     frase: "Tu empresa no te obedece. Te retrata. Casi ningun proyecto muere por falta de plan. Muere por miedo vestido de prudencia.",
     href: "/libros/the-way-emprender",
   },
-  {
-    title: "LEGACY",
-    puerta: "Construir",
-    umbral: false,
-    linea: "El legado que el dinero no puede comprar.",
-    para: "Para el patriarca o constructor que mira a su familia con la casa hermosa y la empresa funcionando, y algo le pesa. Sobre los patrones invisibles que la familia repite, y la diferencia entre herencia (se gasta) y legado (permanece).",
-    senales: "mi familia se ve perfecta pero algo duele, mis hijos lo tienen todo y me preocupan, que dejo cuando ya no este, el dinero resolvio lo visible y rompio lo invisible",
-    frase: "Tus hijos heredan lo que eres, no solo lo que tienes. Tu legado mas poderoso no es lo que dejas. Es lo que eres.",
-    href: "/libro-legacy",
-  },
 
-  // ---- TRASCENDER ----
+  // ---- IV. TRASCIENDE (volver a la raiz) ----
   {
     title: "TRASCENDENCIA",
-    puerta: "Trascender",
+    puerta: "Trasciende",
     umbral: true,
     linea: "El viaje de vuelta a lo que siempre fuiste.",
     para: "Para quien lo logro todo y siente que algo falta: no algo que se compra, algo que se siente a las tres de la manana en un silencio antiguo. La entrada al terreno de trascender. La experiencia directa de la fuente, no como idea sino como realidad vivida.",
@@ -145,8 +138,18 @@ export const BOOKS: Book[] = [
     href: "/libro-trascendencia",
   },
   {
+    title: "LEGACY",
+    puerta: "Trasciende",
+    umbral: false,
+    linea: "El legado que el dinero no puede comprar.",
+    para: "Para el patriarca o constructor que mira a su familia con la casa hermosa y la empresa funcionando, y algo le pesa. Sobre los patrones invisibles que la familia repite, y la diferencia entre herencia (se gasta) y legado (permanece).",
+    senales: "mi familia se ve perfecta pero algo duele, mis hijos lo tienen todo y me preocupan, que dejo cuando ya no este, el dinero resolvio lo visible y rompio lo invisible",
+    frase: "Tus hijos heredan lo que eres, no solo lo que tienes. Tu legado mas poderoso no es lo que dejas. Es lo que eres.",
+    href: "/libro-legacy",
+  },
+  {
     title: "DESPUES",
-    puerta: "Trascender",
+    puerta: "Trasciende",
     umbral: false,
     linea: "Viviendo desde la plenitud. Ya hiciste todo eso, y ahora que.",
     para: "Para el fundador o ejecutivo que vendio, se retiro, o sigue yendo a la oficina sin sentir nada. Donde todo funciona y nada vibra. Sobre los territorios que abandono al construir y la posibilidad de crear de nuevo, desde suficiente.",
@@ -156,7 +159,7 @@ export const BOOKS: Book[] = [
   },
   {
     title: "REMEMBRANDO",
-    puerta: "Trascender",
+    puerta: "Trasciende",
     umbral: false,
     linea: "Escritos para el camino de recordar. Poesia en prosa.",
     para: "Para el que busca claridad en momentos de ruido, o quiere recordar lo que sabe pero ha olvidado. Una coleccion de escritos nacidos como respuestas vivas a momentos de crisis, perdida y decision. Un companero diario, casi un oraculo de consciencia.",
@@ -166,7 +169,7 @@ export const BOOKS: Book[] = [
   },
   {
     title: "SEMILLAS DEL ALMA",
-    puerta: "Trascender",
+    puerta: "Trasciende",
     umbral: false,
     linea: "Mas de cien frases, aforismos y declaraciones. Una por pagina.",
     para: "Para quien quiere verdades destiladas, sin explicaciones ni teoria, para abrir en cualquier pagina y quedarse con una. Libro transversal: cruza todos los territorios y sirve tanto de puerta de entrada como de companero permanente.",
@@ -176,7 +179,7 @@ export const BOOKS: Book[] = [
   },
   {
     title: "THE WAY OF THE WORLD",
-    puerta: "Trascender",
+    puerta: "Trasciende",
     umbral: false,
     linea: "Why the World Is Waking, Not Falling Apart. English edition.",
     para: "Para el lector en ingles con temor por el momento del mundo. Propone una sola lente: mirar a la humanidad como un solo ser, joven, despertando por primera vez, que confunde el amanecer con un incendio. No da tareas ni predicciones, solo una manera de ver.",
