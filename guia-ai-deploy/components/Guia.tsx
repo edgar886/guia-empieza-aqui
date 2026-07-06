@@ -96,7 +96,7 @@ export default function Guia() {
       <div className="chat" ref={scrollRef}>
         {messages.length === 0 && (
           <div className="empty">
-            <p>Cuentame donde estas hoy. Que cargas, que buscas, que se te mueve.</p>
+            <p>Cuentame donde estas hoy. Que buscas, que te duele, que quieres lograr.</p>
             <div className="chips">
               {SUGERENCIAS.map((s, i) => (
                 <button key={i} className="chip" onClick={() => send(s)} disabled={busy}>
