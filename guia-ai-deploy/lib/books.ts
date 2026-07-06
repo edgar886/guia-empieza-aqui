@@ -33,17 +33,6 @@ export const BOOKS: Book[] = [
     href: "/libro-despierta",
   },
   {
-    title: "SALIR DEL HOY",
-    puerta: "Despierta",
-    umbral: false,
-    proximamente: true,
-    linea: "Para los que llevan tiempo ahi.",
-    para: "Para quien lleva demasiado tiempo en el mismo lugar, una rutina, un trabajo, una version de si mismo, y siente que ya se quedo mas de la cuenta pero no ha dado el paso para salir.",
-    senales: "llevo mucho tiempo estancado en lo mismo, se que ya me tengo que mover y no me muevo, siento que me quede demasiado tiempo aqui, quiero salir de esta etapa, sigo en el mismo hoy",
-    frase: "Para los que llevan tiempo ahi.",
-    href: "/libro-salir-del-hoy",
-  },
-  {
     title: "THE WAY",
     puerta: "Despierta",
     umbral: false,
@@ -52,6 +41,17 @@ export const BOOKS: Book[] = [
     senales: "vivo corriendo todo el dia, apurado sin razon, quiero estar presente, llego a la noche vaciado, se me olvido como vivir ligero",
     frase: "Hay dos maneras de vivir. Una la conoces bien. La otra se te olvido. No es un destino, esta disponible hoy, en el siguiente respiro.",
     href: "/libros/the-way",
+  },
+  {
+    title: "SALIR DEL HOYO",
+    puerta: "Despierta",
+    umbral: false,
+    proximamente: true,
+    linea: "Para los que llevan tiempo ahi.",
+    para: "Para quien lleva demasiado tiempo en el mismo hoyo, una rutina, un trabajo, un animo, una version de si mismo, y siente que ya se quedo mas de la cuenta pero no ha dado el paso para salir.",
+    senales: "llevo mucho tiempo estancado en lo mismo, siento que estoy en un hoyo, se que ya me tengo que mover y no me muevo, quiero salir de esta etapa, sigo en el mismo lugar de siempre",
+    frase: "Para los que llevan tiempo ahi.",
+    href: "/libro-salir-del-hoyo",
   },
 
   // ---- II. DOMINIO (gobernar tu instrumento) ----
