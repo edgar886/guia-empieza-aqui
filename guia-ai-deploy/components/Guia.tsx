@@ -21,6 +21,13 @@ export default function Guia() {
     scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: "smooth" });
   }, [messages]);
 
+  // Modo embed: cuando la guia se carga dentro de un iframe con ?embed=1,
+  // oculta el titulo y el pie para integrarse limpio en la pagina del sitio.
+  useEffect(() => {
+    const embed = new URLSearchParams(window.location.search).get("embed") === "1";
+    if (embed) document.documentElement.classList.add("embed");
+  }, []);
+
   async function send(text: string) {
     const clean = text.trim();
     if (!clean || busy) return;
