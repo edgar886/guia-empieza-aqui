@@ -17,6 +17,7 @@ export interface Book {
   senales: string; // lo que la persona suele decir o sentir cuando este es su libro
   frase: string; // frase-ancla del libro, en la voz del libro
   href: string; // pagina interna
+  proximamente?: boolean; // aun no publicado; se puede mencionar, no recomendar como arranque
 }
 
 export const BOOKS: Book[] = [
@@ -30,6 +31,17 @@ export const BOOKS: Book[] = [
     senales: "siento que vivo en automatico, esto no lo elegi yo, quiero cambiar y no se por donde, hay algo que no cuadra en mi vida, me perdi en el camino",
     frase: "Y si la vida que estas viviendo no es tuya. Es un espejo que te muestra donde dejaste de ser el piloto de tu propia vida.",
     href: "/libro-despierta",
+  },
+  {
+    title: "SALIR DEL HOY",
+    puerta: "Despierta",
+    umbral: false,
+    proximamente: true,
+    linea: "Para los que llevan tiempo ahi.",
+    para: "Para quien lleva demasiado tiempo en el mismo lugar, una rutina, un trabajo, una version de si mismo, y siente que ya se quedo mas de la cuenta pero no ha dado el paso para salir.",
+    senales: "llevo mucho tiempo estancado en lo mismo, se que ya me tengo que mover y no me muevo, siento que me quede demasiado tiempo aqui, quiero salir de esta etapa, sigo en el mismo hoy",
+    frase: "Para los que llevan tiempo ahi.",
+    href: "/libro-salir-del-hoy",
   },
   {
     title: "THE WAY",
@@ -192,8 +204,9 @@ export const BOOKS: Book[] = [
 export function booksForPrompt(): string {
   return BOOKS.map((b) => {
     const u = b.umbral ? " [UMBRAL de " + b.puerta + "]" : "";
+    const prox = b.proximamente ? " [PROXIMAMENTE, aun no publicado]" : "";
     return [
-      `- ${b.title}${u} (${b.puerta})`,
+      `- ${b.title}${u}${prox} (${b.puerta})`,
       `  Que es: ${b.linea}`,
       `  Para quien: ${b.para}`,
       `  Senales de que es su libro: ${b.senales}`,
