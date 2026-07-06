@@ -9,7 +9,7 @@ const MODEL = process.env.GUIA_MODEL || "claude-sonnet-5";
 type Msg = { role: "user" | "assistant"; content: string };
 
 export async function POST(req: Request) {
-  const apiKey = process.env.ANTHROPIC_API_KEY?.trim();
+  const apiKey = process.env.ANTHROPIC_API_KEY?.replace(/\s/g, "");
   if (!apiKey) {
     return new Response(
       JSON.stringify({ error: "Falta ANTHROPIC_API_KEY en el entorno." }),
@@ -40,37 +40,32 @@ export async function POST(req: Request) {
 
   const client = new Anthropic({ apiKey });
 
-  const encoder = new TextEncoder();
-  const stream = new ReadableStream<Uint8Array>({
-    async start(controller) {
-      try {
-        const s = await client.messages.stream({
-          model: MODEL,
-          max_tokens: 700,
-          system: systemPrompt(),
-          messages: messages.map((m) => ({ role: m.role, content: m.content })),
-        });
-        for await (const event of s) {
-          if (
-            event.type === "content_block_delta" &&
-            event.delta.type === "text_delta"
-          ) {
-            controller.enqueue(encoder.encode(event.delta.text));
-          }
-        }
-        controller.close();
-      } catch (err: unknown) {
-        const msg = err instanceof Error ? err.message : "Error del modelo.";
-        controller.enqueue(encoder.encode("\n[Guia no disponible: " + msg + "]"));
-        controller.close();
-      }
-    },
-  });
-
-  return new Response(stream, {
-    headers: {
-      "content-type": "text/plain; charset=utf-8",
-      "cache-control": "no-store",
-    },
-  });
+  try {
+    const msg = await client.messages.create({
+      model: MODEL,
+      max_tokens: 700,
+      system: systemPrompt(),
+      messages: messages.map((m) => ({ role: m.role, content: m.content })),
+    });
+    const text = msg.content
+      .map((b) => (b.type === "text" ? b.text : ""))
+      .join("")
+      .trim();
+    return new Response(text || "Cuentame un poco mas de donde estas hoy.", {
+      headers: {
+        "content-type": "text/plain; charset=utf-8",
+        "cache-control": "no-store",
+      },
+    });
+  } catch (err: unknown) {
+    console.error(
+      "GUIA_ERR",
+      err instanceof Error ? err.stack || err.message : String(err)
+    );
+    const msg = err instanceof Error ? err.message : "Error del modelo.";
+    return new Response("[Guia no disponible: " + msg + "]", {
+      status: 200,
+      headers: { "content-type": "text/plain; charset=utf-8" },
+    });
+  }
 }
