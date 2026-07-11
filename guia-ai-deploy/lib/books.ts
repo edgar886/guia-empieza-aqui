@@ -54,6 +54,18 @@ export const BOOKS: Book[] = [
     href: "/libro-salir-del-hoyo",
   },
 
+  {
+    title: "NO POINT",
+    puerta: "Despierta",
+    umbral: false,
+    proximamente: false,
+    linea: "A fable for the man who arrived and found no one home. English edition.",
+    para: "Para el lector en ingles que ya tiene todo lo que se suponia debia querer y despierta a las cuatro de la manana sin poder decir para que es. Una fabula corta en la tradicion de El Alquimista y El Profeta: no ofrece un proposito nuevo, ofrece algo mas raro, ver que el querer mismo era el ruido.",
+    senales: "I have everything and it feels like nothing, logre todo lo que queria y sigo vacio, tengo la vida que se suponia debia querer pero algo se detuvo, I wake up at 4am with no reason, ya no se para que hago lo que hago aunque me vaya bien",
+    frase: "A man who has everything wakes at four in the morning and cannot say what any of it is for.",
+    href: "/libro-no-point",
+  },
+
   // ---- II. DOMINIO (gobernar tu instrumento) ----
   {
     title: "SELF MASTERY",
