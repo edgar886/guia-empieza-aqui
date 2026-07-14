@@ -55,6 +55,18 @@ export const BOOKS: Book[] = [
   },
 
   {
+    title: "VOLVER A VIVIR",
+    puerta: "Despierta",
+    umbral: false,
+    proximamente: false,
+    linea: "Para el que perdio algo que creia para siempre, y no sabe como volver a estar vivo.",
+    para: "El libro para el despues de una perdida: una persona, un matrimonio, un negocio, una casa, el cuerpo de antes del diagnostico, un pais, una version de uno mismo. Enseña a separar las tres cosas que viven dentro de lo que llamas tu dolor: una se siente, otra se honra, y solo una se puede dejar ir, para dejar de cargar lo que ya no toca. Tambien para el que convirtio el duelo en su casa y lleva años ahi, y para el que llega buscando como acompañar a alguien mas. No sustituye ayuda profesional. Acompaña, con la voz de un amigo que ha caminado la perdida.",
+    senales: "perdi a alguien, se murio alguien que amo, estoy en duelo, no supero una perdida, perdi mi matrimonio, me divorcie, cerre mi empresa, perdi mi negocio, perdi mi casa, me diagnosticaron algo, deje mi pais, extraño lo que se fue, no se como seguir sin esa persona, algo que creia para siempre se acabo, como ayudo a alguien en duelo, no se que decirle a quien perdio a alguien",
+    frase: "No lloras lo que perdiste. Lloras a quien eras cuando lo tenias. Vas a seguir extrañando, eso se queda contigo. Lo que cambia es que un martes cualquiera vas a estar tomando cafe y vas a notar que esta caliente.",
+    href: "/libro-volver-a-vivir",
+  },
+
+  {
     title: "NO POINT",
     puerta: "Despierta",
     umbral: false,
