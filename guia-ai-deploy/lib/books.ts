@@ -223,6 +223,26 @@ export const BOOKS: Book[] = [
     frase: "What we keep calling collapse may be the sound a thing makes when it opens its eyes. The world isnt ending. Its young, and frightened, and beginning to wake.",
     href: "/libro-the-way-of-the-world",
   },
+  {
+    title: "NO POINT",
+    puerta: "Despierta",
+    umbral: false,
+    linea: "A fable. English edition.",
+    para: "Para el lector en ingles que ya consiguio lo que le dijeron que queria y despierta a las cuatro de la manana sin saber para que es. Adrian sale de su propia vida para averiguarlo y en el camino encuentra gente que construyo todo alrededor de un solo punto: el amor, el dinero, ser visto, ser necesitado, una causa, una familia, un despertar. Fabula filosofica corta, en la tradicion de El Alquimista y El Profeta. No ofrece un proposito nuevo, ofrece algo mas raro.",
+    senales: "I read in English, I have everything and it feels empty, I wake at four in the morning with a good life and a silent question, I dont know what any of this is for, I got what I wanted and the wanting was the noise",
+    frase: "For anyone who has ever lain awake at four in the morning with a good life and a silent question.",
+    href: "/libro-no-point",
+  },
+  {
+    title: "WHAT HOLDS YOU",
+    puerta: "Despierta",
+    umbral: false,
+    linea: "The universe is for you, and it is not nice to you. English edition.",
+    para: "Para el lector en ingles que vive en guardia: no puede descansar, no puede delegar, se prepara para el golpe hasta en un buen ano. Primera mitad, lo que se puede comprobar: la realidad es fija, gobernada, indiferente, y te sostiene. Segunda mitad, marcada en voz alta: la apuesta de que lo que esta debajo es bueno. Sin promesas, sin prosperidad, sin leccion escondida en tu peor ano. Un piso, y lo que se vuelve posible cuando lo puedes sentir.",
+    senales: "I read in English, I cant rest, I cant delegate, I brace for the reversal even in a good year, is the universe against me, I keep arguing with what already happened, I want to know what I am standing on",
+    frase: "Nothing that happens to you is a verdict. It is material. And you are here to grow from it.",
+    href: "/libro-what-holds-you",
+  },
 ];
 
 export function booksForPrompt(): string {
