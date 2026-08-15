@@ -51,7 +51,7 @@ export const BOOKS: Book[] = [
     para: "El libro hecho para la depresion que ya se volvio rutina. Para quien lleva tiempo abajo y ya administra el dolor en vez de sentirlo: el que ya no llora y esa quietud lo asusta mas que el llanto, el que perdio algo y sigue sosteniendo la version de estar bien. No es para quien acaba de caer por una perdida reciente, y no sustituye ayuda profesional cuando el hoyo tiene nombre de diagnostico. Acompaña, con la voz de un amigo que estuvo en el fondo.",
     senales: "sufro de depresion, estoy deprimido, llevo tiempo abajo, me siento en el fondo desde hace mucho, ya no siento nada solo administro el dolor, ya no lloro y me asusta esa quietud, lo perdi todo y sigo cargandolo, siento que me rendi por dentro, no le encuentro sentido a nada",
     frase: "No vine a decirte que todo va a estar bien. Vine a decirte como se sale. Yo no vengo del borde, vengo del fondo. El hoyo es real, y tambien es real que se sale.",
-    href: "/libro-salir-del-hoyo",
+    audio: true, href: "/libro-salir-del-hoyo",
   },
 
   {
