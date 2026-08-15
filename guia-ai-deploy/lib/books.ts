@@ -17,6 +17,7 @@ export interface Book {
   senales: string; // lo que la persona suele decir o sentir cuando este es su libro
   frase: string; // frase-ancla del libro, en la voz del libro
   href: string; // pagina interna
+  audio?: boolean; // existe en audiolibro
   proximamente?: boolean; // aun no publicado; se puede mencionar, no recomendar como arranque
 }
 
