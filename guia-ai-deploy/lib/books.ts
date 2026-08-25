@@ -66,6 +66,16 @@ export const BOOKS: Book[] = [
     frase: "No lloras lo que perdiste. Lloras a quien eras cuando lo tenias. Vas a seguir extrañando, eso se queda contigo. Lo que cambia es que un martes cualquiera vas a estar tomando cafe y vas a notar que esta caliente.",
     href: "/libro-volver-a-vivir",
   },
+  {
+    title: "THE WAY: PADRES",
+    puerta: "Despierta",
+    umbral: false,
+    linea: "La gracia de comprender.",
+    para: "Para quien sigue cargando una cuenta con su padre o su madre. Sienta al lector a leer el expediente completo con los ojos que tiene hoy: los mecanismos con nombre y forma, la vida de esos dos jovenes que llegaron a una casa sin saber quienes eran, y la conclusion que saco de si mismo a los ocho anos. Comprender no justifica lo que hicieron; cambia de quien es tu vida a partir de manana.",
+    senales: "cuelgo el telefono con mi mama y me quedo raro, la cena de diciembre me pesa, sigo enojado con mi papa, me aleje de ellos y cargo la culpa, quiero dejar de esperar que cambien",
+    frase: "Tuviste los padres que tuviste. La pregunta es si vas a seguir esperando otros. Comprenderlos no los justifica. Lo que cambia es de quien es tu vida a partir de manana.",
+    href: "/libros/the-way-padres",
+  },
 
   {
     title: "NO POINT",
