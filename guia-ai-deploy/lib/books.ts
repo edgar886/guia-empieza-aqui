@@ -177,7 +177,6 @@ export const BOOKS: Book[] = [
     title: "THE WAY: DINERO",
     puerta: "Crea",
     umbral: false,
-    proximamente: true,
     linea: "La gracia del valor. El dinero mide cosas, no a ti.",
     para: "Para quien lleva anos midiendose con la bascula equivocada. El que no llega a fin de mes, el que tiene patrimonio y no duerme, el que no puede parar porque cada meta que alcanza se vuelve el punto de partida de la siguiente, y el que se enorgullece de no saber y lo paga caro. Trabaja las dos mitades: el estado desde donde decides, y el oficio de ganar, gastar, ahorrar, invertir y dar. No da rendimientos ni dice donde poner el dinero.",
     senales: "gano bien y siento que no me alcanza, vivo con miedo al dinero, no se cuanto es suficiente, acumulo por miedo y vivo pobre con la cuenta llena, compro para sentirme alguien, no entiendo de finanzas y me da pena preguntar, me despierto de madrugada pensando en numeros, tengo deudas, no puedo parar de trabajar",
