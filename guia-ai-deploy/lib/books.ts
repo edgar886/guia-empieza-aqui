@@ -31,7 +31,7 @@ export const BOOKS: Book[] = [
     para: "Para quien vive en piloto automatico y empieza a sospechar que la vida que carga no es del todo suya. El punto de entrada al camino interior. Recorre tres etapas: el despertar, el dominio y la trascendencia.",
     senales: "siento que vivo en automatico, esto no lo elegi yo, quiero cambiar y no se por donde, hay algo que no cuadra en mi vida, me perdi en el camino",
     frase: "Y si la vida que estas viviendo no es tuya. Es un espejo que te muestra donde dejaste de ser el piloto de tu propia vida.",
-    href: "/libro-despierta",
+    audio: true, href: "/libro-despierta",
   },
   {
     title: "THE WAY",
@@ -41,7 +41,7 @@ export const BOOKS: Book[] = [
     para: "Para quien vive apurado aunque no haya prisa y recuerda, en el fondo, otra manera de andar. Describe la segunda manera de vivir: presente donde la vida ocurre, la mente quieta mientras trabajas, el corazon en paz mientras amas.",
     senales: "vivo corriendo todo el dia, apurado sin razon, quiero estar presente, llego a la noche vaciado, se me olvido como vivir ligero",
     frase: "Hay dos maneras de vivir. Una la conoces bien. La otra se te olvido. No es un destino, esta disponible hoy, en el siguiente respiro.",
-    href: "/libros/the-way",
+    audio: true, href: "/libros/the-way",
   },
   {
     title: "SALIR DEL HOYO",
@@ -98,7 +98,7 @@ export const BOOKS: Book[] = [
     para: "Para quien ya desperto y descubrio que tiene las manos en el volante sin saber girar. Ensena a dominar las tres dimensiones del instrumento humano: la mente, las emociones y el ego. No con afirmaciones, con practica.",
     senales: "reacciono antes de pensar, mis emociones me gobiernan, mi mente no para, quiero disciplina interior, se lo que tengo que hacer pero no me domino",
     frase: "No basta con despertar. Hay que aprender a manejar. La maestria no se lee, se entrena.",
-    href: "/libro-self-mastery",
+    audio: true, href: "/libro-self-mastery",
   },
   {
     title: "NADA Y TODO",
@@ -150,7 +150,7 @@ export const BOOKS: Book[] = [
     para: "Para quien ya ama a alguien y quiere dejar de defenderse del amor para empezar a construirlo. Ensena a ver a la pareja como es y no como reflejo, a pedir sin castigar, a soltar el control disfrazado de amor.",
     senales: "mi pareja y yo nos alejamos, discutimos por lo mismo, hay reclamo callado, la emocion del principio se acabo, me defiendo en vez de amar",
     frase: "El amor casi siempre estuvo. Lo que falto fue una manera de amarse sin miedo. Casi ninguna pareja se rompe por falta de amor. Se rompe por miedo.",
-    href: "/libros/the-way-parejas",
+    audio: true, href: "/libros/the-way-parejas",
   },
   {
     title: "THE WAY: HIJOS",
@@ -160,7 +160,7 @@ export const BOOKS: Book[] = [
     para: "Para el padre o la madre que hizo todo lo que se supone y aun asi la casa se siente tensa. No es un manual de crianza: trabaja el estado desde el que crias, porque un hijo no recibe tus palabras, recibe el estado desde el cual se las dijiste.",
     senales: "mi hijo se apaga o se rebela, la casa se siente tensa, puse limites y no funciona, me acuesto preguntando que falta, temo heredarle lo que me dolio",
     frase: "Un hijo no recibe tus palabras. Recibe el estado desde el cual se las dijiste. No fabricas la flor. Haces el jardin.",
-    href: "/libros/the-way-hijos",
+    audio: true, href: "/libros/the-way-hijos",
   },
   {
     title: "THE WAY: EMPRENDER",
@@ -170,8 +170,21 @@ export const BOOKS: Book[] = [
     para: "Para el que carga algo que quiere crear y no salta, o ya construyo y no puede celebrar. Ensena a reconocer la voz del miedo disfrazada de sensatez, a separarse de la creacion sin dejar de amarla, y a crear desde lo lleno.",
     senales: "tengo una idea y no salto, todavia no es el momento, me preparo eternamente, ya construi y no lo disfruto, estoy confundido con mis resultados",
     frase: "Tu empresa no te obedece. Te retrata. Casi ningun proyecto muere por falta de plan. Muere por miedo vestido de prudencia.",
-    href: "/libros/the-way-emprender",
+    audio: true, href: "/libros/the-way-emprender",
   },
+
+  {
+    title: "THE WAY: DINERO",
+    puerta: "Crea",
+    umbral: false,
+    proximamente: true,
+    linea: "La gracia del valor. El dinero mide cosas, no a ti.",
+    para: "Para quien lleva anos midiendose con la bascula equivocada. El que no llega a fin de mes, el que tiene patrimonio y no duerme, el que no puede parar porque cada meta que alcanza se vuelve el punto de partida de la siguiente, y el que se enorgullece de no saber y lo paga caro. Trabaja las dos mitades: el estado desde donde decides, y el oficio de ganar, gastar, ahorrar, invertir y dar. No da rendimientos ni dice donde poner el dinero.",
+    senales: "gano bien y siento que no me alcanza, vivo con miedo al dinero, no se cuanto es suficiente, acumulo por miedo y vivo pobre con la cuenta llena, compro para sentirme alguien, no entiendo de finanzas y me da pena preguntar, me despierto de madrugada pensando en numeros, tengo deudas, no puedo parar de trabajar",
+    frase: "El dinero mide cosas. No a ti. Preguntarle a tu cuenta cuanto vales es preguntarle a la bascula si eres buena persona. La carencia se cura con dinero. La escasez sigue igual.",
+    href: "/libros/the-way-dinero",
+  },
+
 
   // ---- IV. TRASCIENDE (volver a la raiz) ----
   {
@@ -260,8 +273,9 @@ export function booksForPrompt(): string {
   return BOOKS.map((b) => {
     const u = b.umbral ? " [UMBRAL de " + b.puerta + "]" : "";
     const prox = b.proximamente ? " [PROXIMAMENTE, aun no publicado]" : "";
+    const aud = b.audio ? " [TAMBIEN EN AUDIOLIBRO]" : "";
     return [
-      `- ${b.title}${u}${prox} (${b.puerta})`,
+      `- ${b.title}${u}${prox}${aud} (${b.puerta})`,
       `  Que es: ${b.linea}`,
       `  Para quien: ${b.para}`,
       `  Senales de que es su libro: ${b.senales}`,
