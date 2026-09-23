@@ -165,3 +165,5 @@ html.azul .field input { color: #f5f0e8; font-size: 18px; }
 html.azul .field input::placeholder { color: #6f7a92; }
 html.azul .field button { background: #c9a84c; color: #141b28; }
 html.azul .field button:hover:not(:disabled) { background: #e2c473; color: #141b28; }
+
+html.azul.embed .wrap { max-width: none; padding: 6px 0 12px; }
