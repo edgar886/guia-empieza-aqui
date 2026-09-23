@@ -126,7 +126,7 @@ export const BOOKS: Book[] = [
     puerta: "Crea",
     umbral: false,
     linea: "Dirigir desde la consciencia, no desde el miedo.",
-    para: "Para quien tiene gente a su cargo y sospecha que la dirige desde el control o el cansancio. Nombra la soledad de quien lidera y ofrece los cinco pilares: consciencia, integridad, confianza, amor y armonia fluida.",
+    para: "Para quien tiene gente a su cargo y sospecha que la dirige desde el control o el cansancio. Nombra la soledad de quien lidera y ofrece los cinco pilares: consciencia, integridad, confianza, amor y armonia.",
     senales: "mi equipo ya no me sigue, dirijo desde el control, estoy cansado de liderar, me siento solo al mando, mi organizacion opera desde el miedo",
     frase: "Las organizaciones estan enfermas porque operan desde el miedo, y el miedo no puede crear nada que perdure. Liderar es servir, y construir es amar.",
     href: "/libro-lidera",

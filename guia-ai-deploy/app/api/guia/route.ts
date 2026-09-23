@@ -43,7 +43,7 @@ export async function POST(req: Request) {
   try {
     const msg = await client.messages.create({
       model: MODEL,
-      max_tokens: 700,
+      max_tokens: 2000,
       system: systemPrompt(),
       messages: messages.map((m) => ({ role: m.role, content: m.content })),
     });
