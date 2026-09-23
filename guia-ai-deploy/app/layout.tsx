@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Empieza aqui — Guia de Edgar Boone",
-  description: "Cuentame donde estas hoy y te digo por donde entrar.",
+  description: "¿Qué buscas? ¿Qué te duele? ¿Qué quieres lograr?",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
