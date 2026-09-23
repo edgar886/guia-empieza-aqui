@@ -118,9 +118,17 @@ export default function Guia() {
       if (!/^https?:\/\//.test(p)) return <span key={i}>{p}</span>;
       const url = p.replace(/[.,;]+$/, "");
       const propio = rutaDe(url) !== null;
+      const member = /^https?:\/\/member\.edgarboone\.com\//.test(url);
+      const texto = propio
+        ? "Ver el libro →"
+        : member
+        ? /\/tu-camino/.test(url)
+          ? "Empieza tu camino →"
+          : "Ver el curso →"
+        : url.replace(/^https?:\/\//, "");
       return (
-        <a key={i} href={url} target={propio ? "_top" : "_blank"} rel="noopener noreferrer" className="lnk">
-          {propio ? "Ver el libro →" : url.replace(/^https?:\/\//, "")}
+        <a key={i} href={url} target={propio || member ? "_top" : "_blank"} rel="noopener noreferrer" className="lnk">
+          {texto}
         </a>
       );
     });

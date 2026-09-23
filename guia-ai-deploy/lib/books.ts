@@ -257,6 +257,33 @@ export const BOOKS: Book[] = [
   },
 ];
 
+// Curso de cada libro en member.edgarboone.com/libro/<slug> (23-sep-2026).
+// Remembrando y Semillas del Alma no tienen curso. Si entra un libro con curso, agregarlo aqui.
+const CURSO = "https://member.edgarboone.com/libro/";
+export const CURSOS: Record<string, string> = {
+  "/libro-despierta": "despierta",
+  "/libro-self-mastery": "self-mastery",
+  "/libro-en-la-arena": "en-la-arena",
+  "/libro-lidera": "lidera",
+  "/libro-trascendencia": "trascendencia",
+  "/libro-caban": "caban",
+  "/libros/the-way": "the-way-gracia",
+  "/libro-the-way": "the-way-gracia",
+  "/libros/the-way-parejas": "the-way-parejas",
+  "/libros/the-way-hijos": "the-way-hijos",
+  "/libros/the-way-emprender": "the-way-emprender",
+  "/libros/the-way-padres": "padres",
+  "/libros/the-way-dinero": "dinero",
+  "/libro-despues": "despues",
+  "/libro-legacy": "legacy",
+  "/libro-nada-y-todo": "nada-y-todo",
+  "/libro-salir-del-hoyo": "salir-del-hoyo",
+  "/libro-volver-a-vivir": "volver-a-vivir",
+  "/libro-the-way-of-the-world": "the-way-of-the-world",
+  "/libro-no-point": "no-point",
+  "/libro-what-holds-you": "what-holds-you",
+};
+
 export function booksForPrompt(): string {
   return BOOKS.map((b) => {
     const u = b.umbral ? " [UMBRAL de " + b.puerta + "]" : "";
@@ -269,6 +296,7 @@ export function booksForPrompt(): string {
       `  Senales de que es su libro: ${b.senales}`,
       `  Voz del libro: ${b.frase}`,
       `  Enlace: ${SITE}${b.href}`,
+      ...(CURSOS[b.href] ? [`  Curso: ${CURSO}${CURSOS[b.href]}`] : [`  Curso: no tiene`]),
     ].join("\n");
   }).join("\n\n");
 }
