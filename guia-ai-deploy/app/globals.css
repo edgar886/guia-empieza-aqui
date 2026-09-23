@@ -153,7 +153,7 @@ html.embed .guia .foot { display: none; }
 html.azul body { background: transparent; }
 html.azul .chat { background: transparent; border: none; padding: 0; max-height: 440px; }
 html.azul .empty p { color: #f5f0e8; font-size: 25px; margin-bottom: 18px; }
-html.azul .chip { color: #c9cfdc; background: #1a2336; border-color: #33405c; font-size: 17px; }
+html.azul .chip { color: #c9cfdc; background: #1a2336; border-color: #33405c; font-size: 17px; transition: border-color 0.2s; }
 html.azul .chip:hover:not(:disabled) { background: #1a2336; border-color: #c9a84c; color: #e7d6a6; }
 html.azul .msg.user .body { background: #26314a; border-color: #26314a; color: #f5f0e8; }
 html.azul .msg.assistant .who { color: #c9a84c; }
