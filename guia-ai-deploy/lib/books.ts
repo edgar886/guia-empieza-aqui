@@ -64,6 +64,7 @@ export const BOOKS: Book[] = [
     para: "El libro para el despues de una perdida: una persona, un matrimonio, un negocio, una casa, el cuerpo de antes del diagnostico, un pais, una version de uno mismo. Enseña a separar las tres cosas que viven dentro de lo que llamas tu dolor: una se siente, otra se honra, y solo una se puede dejar ir, para dejar de cargar lo que ya no toca. Tambien para el que convirtio el duelo en su casa y lleva años ahi, y para el que llega buscando como acompañar a alguien mas. No sustituye ayuda profesional. Acompaña, con la voz de un amigo que ha caminado la perdida.",
     senales: "perdi a alguien, se murio alguien que amo, estoy en duelo, no supero una perdida, perdi mi matrimonio, me divorcie, cerre mi empresa, perdi mi negocio, perdi mi casa, me diagnosticaron algo, deje mi pais, extraño lo que se fue, no se como seguir sin esa persona, algo que creia para siempre se acabo, como ayudo a alguien en duelo, no se que decirle a quien perdio a alguien",
     frase: "No lloras lo que perdiste. Lloras a quien eras cuando lo tenias. Vas a seguir extrañando, eso se queda contigo. Lo que cambia es que un martes cualquiera vas a estar tomando cafe y vas a notar que esta caliente.",
+    audio: true,
     href: "/libro-volver-a-vivir",
   },
   {
@@ -74,6 +75,7 @@ export const BOOKS: Book[] = [
     para: "Para quien sigue cargando una cuenta con su padre o su madre. Sienta al lector a leer el expediente completo con los ojos que tiene hoy: los mecanismos con nombre y forma, la vida de esos dos jovenes que llegaron a una casa sin saber quienes eran, y la conclusion que saco de si mismo a los ocho anos. Comprender no justifica lo que hicieron; cambia de quien es tu vida a partir de manana.",
     senales: "cuelgo el telefono con mi mama y me quedo raro, la cena de diciembre me pesa, sigo enojado con mi papa, me aleje de ellos y cargo la culpa, quiero dejar de esperar que cambien",
     frase: "Tuviste los padres que tuviste. La pregunta es si vas a seguir esperando otros. Comprenderlos no los justifica. Lo que cambia es de quien es tu vida a partir de manana.",
+    audio: true,
     href: "/libros/the-way-padres",
   },
 
@@ -97,6 +99,7 @@ export const BOOKS: Book[] = [
     para: "Para quien carga miedo, estres y ansiedad y los ha explicado de mil maneras: el trabajo, el dinero, una relacion. Va por debajo de todas esas explicaciones, hasta la creencia que vive bajo todos los miedos: puedo desaparecer.",
     senales: "tengo ansiedad, cargo estres que no cede, vivo preocupado, el miedo dirige mas de lo que admito, me angustio sin causa clara",
     frase: "El miedo no responde a un peligro real. Lo inventa. Sigue cualquier miedo hasta el fondo y no hallas un monstruo. Hallas nada. El Coco no existe. Tu, si.",
+    audio: true,
     href: "/libro-nada-y-todo",
   },
   {
@@ -107,6 +110,7 @@ export const BOOKS: Book[] = [
     para: "Para quien ya trabajo, ya se esforzo, ya hizo todo lo que sabia, y llego a un punto donde empujar mas fuerte no lo lleva mas lejos. Ensena a poner intencion desde el alma, leer las senales de la vida y soltar el control del como.",
     senales: "empujar mas fuerte ya no funciona, el control me esta estancando, quiero fluir sin rendirme, siento que forzo todo, busco un centro sereno",
     frase: "Donde el control que te trajo hasta aqui se convierte en el obstaculo que te detiene. No te ensena a controlar tu vida, te ensena a navegarla.",
+    audio: true,
     href: "/libro-caban",
   },
 
@@ -119,6 +123,7 @@ export const BOOKS: Book[] = [
     para: "Para el que crea empresas, lidera familias o levanta visiones desde la nada, y descubrio que construir es un acto solitario. La entrada al terreno de crear. Habla de los criticos, el miedo que paraliza y el ego del constructor.",
     senales: "construyo solo, me critican desde afuera, cargo el peso de sacar algo adelante, nadie ve lo que cuesta, estoy en el polvo sudando",
     frase: "Es lo que alguien debio decirte hace anos. Lo que se forja en la arena, nadie te lo puede quitar.",
+    audio: true,
     href: "/libro-en-la-arena",
   },
   {
@@ -129,6 +134,7 @@ export const BOOKS: Book[] = [
     para: "Para quien tiene gente a su cargo y sospecha que la dirige desde el control o el cansancio. Nombra la soledad de quien lidera y ofrece los cinco pilares: consciencia, integridad, confianza, amor y armonia.",
     senales: "mi equipo ya no me sigue, dirijo desde el control, estoy cansado de liderar, me siento solo al mando, mi organizacion opera desde el miedo",
     frase: "Las organizaciones estan enfermas porque operan desde el miedo, y el miedo no puede crear nada que perdure. Liderar es servir, y construir es amar.",
+    audio: true,
     href: "/libro-lidera",
   },
   {
@@ -170,6 +176,7 @@ export const BOOKS: Book[] = [
     para: "Para quien lleva anos midiendose con la bascula equivocada. El que no llega a fin de mes, el que tiene patrimonio y no duerme, el que no puede parar porque cada meta que alcanza se vuelve el punto de partida de la siguiente, y el que se enorgullece de no saber y lo paga caro. Trabaja las dos mitades: el estado desde donde decides, y el oficio de ganar, gastar, ahorrar, invertir y dar. No da rendimientos ni dice donde poner el dinero.",
     senales: "gano bien y siento que no me alcanza, vivo con miedo al dinero, no se cuanto es suficiente, acumulo por miedo y vivo pobre con la cuenta llena, compro para sentirme alguien, no entiendo de finanzas y me da pena preguntar, me despierto de madrugada pensando en numeros, tengo deudas, no puedo parar de trabajar",
     frase: "El dinero mide cosas. No a ti. Preguntarle a tu cuenta cuanto vales es preguntarle a la bascula si eres buena persona. La carencia se cura con dinero. La escasez sigue igual.",
+    audio: true,
     href: "/libros/the-way-dinero",
   },
 
@@ -183,6 +190,7 @@ export const BOOKS: Book[] = [
     para: "Para quien lo logro todo y siente que algo falta: no algo que se compra, algo que se siente a las tres de la manana en un silencio antiguo. La entrada al terreno de trascender. La experiencia directa de la fuente, no como idea sino como realidad vivida.",
     senales: "lo tengo todo y siento un vacio, hay algo mas y quiero buscarlo, despierto a las 3am con un silencio dentro, busco lo espiritual sin religion",
     frase: "El viaje fue el proceso de recordar, no de llegar. Despierta. Y no vuelvas a dormir.",
+    audio: true,
     href: "/libro-trascendencia",
   },
   {
@@ -193,6 +201,7 @@ export const BOOKS: Book[] = [
     para: "Para el patriarca o constructor que mira a su familia con la casa hermosa y la empresa funcionando, y algo le pesa. Sobre los patrones invisibles que la familia repite, y la diferencia entre herencia (se gasta) y legado (permanece).",
     senales: "mi familia se ve perfecta pero algo duele, mis hijos lo tienen todo y me preocupan, que dejo cuando ya no este, el dinero resolvio lo visible y rompio lo invisible",
     frase: "Tus hijos heredan lo que eres, no solo lo que tienes. Tu legado mas poderoso no es lo que dejas. Es lo que eres.",
+    audio: true,
     href: "/libro-legacy",
   },
   {
@@ -203,6 +212,7 @@ export const BOOKS: Book[] = [
     para: "Para el fundador o ejecutivo que vendio, se retiro, o sigue yendo a la oficina sin sentir nada. Donde todo funciona y nada vibra. Sobre los territorios que abandono al construir y la posibilidad de crear de nuevo, desde suficiente.",
     senales: "ya lo logre y no siento nada, vendi la empresa y ahora que, me retire y perdi el sentido, todo funciona y nada vibra, el exito dejo de llenarme",
     frase: "Lograste lo que te propusiste. Se suponia que iba a ser suficiente. No lo fue. Lo que viene se construye desde otro lugar.",
+    audio: true,
     href: "/libro-despues",
   },
   {
@@ -213,6 +223,7 @@ export const BOOKS: Book[] = [
     para: "Para el que busca claridad en momentos de ruido, o quiere recordar lo que sabe pero ha olvidado. Una coleccion de escritos nacidos como respuestas vivas a momentos de crisis, perdida y decision. Un companero diario, casi un oraculo de consciencia.",
     senales: "quiero algo para leer despacio, busco palabras que me acompanen, estoy en un momento de perdida o decision, necesito recordarme quien soy",
     frase: "Herramientas de recordacion: textos que te devuelven a quien eres, en los momentos en que lo olvidas.",
+    audio: true,
     href: "/libro-remembrando",
   },
   {
@@ -233,6 +244,7 @@ export const BOOKS: Book[] = [
     para: "Para el lector en ingles con temor por el momento del mundo. Propone una sola lente: mirar a la humanidad como un solo ser, joven, despertando por primera vez, que confunde el amanecer con un incendio. No da tareas ni predicciones, solo una manera de ver.",
     senales: "I read in English, the world feels like its collapsing, I feel dread about where humanity is going, I want hope that is lucid not naive",
     frase: "What we keep calling collapse may be the sound a thing makes when it opens its eyes. The world isnt ending. Its young, and frightened, and beginning to wake.",
+    audio: true,
     href: "/libro-the-way-of-the-world",
   },
   {
@@ -243,6 +255,7 @@ export const BOOKS: Book[] = [
     para: "Para el lector en ingles que ya consiguio lo que le dijeron que queria y despierta a las cuatro de la manana sin saber para que es. Adrian sale de su propia vida para averiguarlo y en el camino encuentra gente que construyo todo alrededor de un solo punto: el amor, el dinero, ser visto, ser necesitado, una causa, una familia, un despertar. Fabula filosofica corta, en la tradicion de El Alquimista y El Profeta. No ofrece un proposito nuevo, ofrece algo mas raro.",
     senales: "I read in English, I have everything and it feels empty, I wake at four in the morning with a good life and a silent question, I dont know what any of this is for, I got what I wanted and the wanting was the noise",
     frase: "For anyone who has ever lain awake at four in the morning with a good life and a silent question.",
+    audio: true,
     href: "/libro-no-point",
   },
   {
@@ -253,6 +266,7 @@ export const BOOKS: Book[] = [
     para: "Para el lector en ingles que vive en guardia: no puede descansar, no puede delegar, se prepara para el golpe hasta en un buen ano. Primera mitad, lo que se puede comprobar: la realidad es fija, gobernada, indiferente, y te sostiene. Segunda mitad, marcada en voz alta: la apuesta de que lo que esta debajo es bueno. Sin promesas, sin prosperidad, sin leccion escondida en tu peor ano. Un piso, y lo que se vuelve posible cuando lo puedes sentir.",
     senales: "I read in English, I cant rest, I cant delegate, I brace for the reversal even in a good year, is the universe against me, I keep arguing with what already happened, I want to know what I am standing on",
     frase: "Nothing that happens to you is a verdict. It is material. And you are here to grow from it.",
+    audio: true,
     href: "/libro-what-holds-you",
   },
 ];
