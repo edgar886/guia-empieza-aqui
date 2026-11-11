@@ -68,6 +68,18 @@ export const BOOKS: Book[] = [
     href: "/libro-volver-a-vivir",
   },
   {
+    title: "NO ESTAS SOLO",
+    puerta: "Despierta",
+    umbral: false,
+    proximamente: false,
+    linea: "Para el que se siente solo, aunque este rodeado de gente.",
+    para: "El libro para la soledad en todas sus formas: la del que no tiene a nadie (se mudo, enviudo, los años se llevaron a los suyos), la del que esta rodeado y se rie un segundo tarde, y la del fuerte que resuelve todo para todos y no tiene a quien decirle que esta cansado. Distingue estar solo de sentirse solo, le devuelve al lector la parte de la puerta que cerro el mismo, y recorre las compañias que estuvieron ahi todo el tiempo: tu contigo, los otros, y algo mas grande que tu, crea o no en Dios. Breve, se lee en una tarde. Tambien para regalarle a alguien que hoy se siente solo. Aislamiento, no depresion (para eso, SALIR DEL HOYO) ni duelo (para eso, VOLVER A VIVIR).",
+    senales: "me siento solo, me siento sola, estoy solo, no tengo a nadie, nadie me entiende, me siento aislado, estoy rodeado de gente y me siento solo, no tengo amigos, me mude y no conozco a nadie, siempre soy el fuerte, nadie me pregunta como estoy, no tengo a quien contarle, me cuesta pedir ayuda, me cerre despues de un rechazo, no encajo, siento que no pertenezco, mis hijos ya se fueron, quiero ayudar a alguien que se siente solo",
+    frase: "Estar solo es un hecho. Sentirse solo se puede trabajar. La puerta que cerraste por dentro se abre por dentro. De la soledad se sale acompañado.",
+    audio: false,
+    href: "/libro-no-estas-solo",
+  },
+  {
     title: "THE WAY: PADRES",
     puerta: "Despierta",
     umbral: false,
